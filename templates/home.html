@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> URL Shortener </title>
+<head>
+  <! --- Define that we want the background to take up the whole display ---> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/style.css">
+    </head>
+<body class="bg">
+    <div class="bg">
+    <h1 style="font-size:100px; color:white; margin:10px;">Dynamic Link Shortener</h1>
+
+    <! --- Add jinja code to grab and display any stored flash messages ---> 
+    
+    {% for message in get_flashed_messages() %}
+    <h2 class="err">{{ message }}</h2>
+    {% endfor %}
+
+    <! --- Define the forms for user data entry ---> 
+    
+    <form class="box" action="your-url" method="post">
+    <label class="tblab" for="url">Website URL</label>
+    <input class="tb" type="url" name="url" value="" required>
+    <br>
+    <label class="tblab" for="code">Short Name</label>
+    <input class="tb" type="text" name="code" value="" required>
+    <br>
+    <input class="button" type="submit" value="Shorten">
+    </form>
+    
+
+    
+    <form class="box" action="your-url" method="post" enctype="multipart/form-data">
+      <label class="tblab" for="file">File</label>
+      <input class="ch" type="file" name="file" value="" required>
+      <br>
+      <label class="tblab" for="code">Short Name</label>
+      <input class="tb" type="text" name="code" value="" required>
+      <br>
+      <input class="button" type="submit" value="Shorten">
+      </form>
+   
+
+
+<! ---- Display any codes the user has created so far this session ---- >
+      {% if codes %}
+      <h2 class="err">Codes you have created so far:</h2>
+      <ul>
+        {% for code in codes %}
+        <a href="{{ url_for('redirect_to', code=code) }}">
+        <li class="txt">{{ code }}</li>
+        </a>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+    <h2 style="font-size:60px; color:white; margin:10px;">Designer</h2>
+    <p style="font-size:30px; font-weight: bolder; color: white; margin:10px;text-shadow: #000 0px 0px 1px, #000 0px 0px 1px;">Designed by Stefan Meredith</p>
+    </div>
+
+</body>
+</html>

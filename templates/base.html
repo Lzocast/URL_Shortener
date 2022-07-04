@@ -1,0 +1,18 @@
+<! ---- This allows you to create a template for other pages ---->
+<! ---- Anything typed here gets duplicated on a page that has the appropriate extend tag ---- >
+
+<!DOCTYPE html>
+<html lang="en">
+<title> {% block Title %}{% endblock %} </title> <! --- allows tab title to be set per page ---- >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/style.css">
+    </head>
+<body class="bg">
+
+<! ---- This defines where the page unique code gets placed when this template is used ---- >
+    {% block main %}
+    {% endblock %}
+
+</body>
+</html>

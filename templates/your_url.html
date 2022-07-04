@@ -1,0 +1,15 @@
+<! ---- Using the template method for pratice ---- >
+
+{% extends 'base.html' %}
+
+{% block title %}Your Short Link{% endblock %}
+
+{% block main %}
+
+<h1 style="font-size:100px; color:white; margin:10px;">Your URL</h1>
+
+<! --- In a production env, you'd not use localhost ---> 
+
+<h2 style="font-size:85px; color:white; margin:10px;">http://localhost:5000/{{ code }}</h2>
+
+{% endblock %}

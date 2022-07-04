@@ -1,0 +1,116 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("back.jpeg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Define some global text effects NOTE: these override everything if the class is invoked
+    within a tag pair */
+
+    text-align: center;
+
+    text-shadow: #FC0 1px 0 10px;
+
+  }
+
+  .txt {
+    font-size:20px; 
+    font-weight: bolder;
+    margin: 10px;
+    color: white;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+/* Define the way error message is displayed */
+
+  .err{
+    background-color: darkslategray;
+    font-size:40px; 
+    font-weight: bolder;
+    margin: 10px;
+    color: white;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+ /* Define the background image and effects for the user input section */
+
+  .box{
+    background-image:url("table.gif");
+    margin-left: 35%;
+    margin-right: 35%;
+    opacity: 85%;
+    border-radius: 30px;
+  }
+
+  .button {
+
+    /* remove default behavior */
+    appearance:none;
+    -webkit-appearance:none;
+  
+    /* usual styles */
+    padding:10px;
+    border:none;
+    background-color:#4b0458;
+    color:#fff;
+    font-weight:600;
+    border-radius:30px;
+    width:100%;
+
+  
+  }
+
+  .button:hover{
+  background-color: #bf15ee;
+  box-shadow:0 0 4px rgba(0,0,0,0.3);
+  transition: .3s box-shadow;
+
+  }
+
+  .tblab {
+    font-size:20px; 
+    font-weight: bolder;
+    margin: 5px;
+    width: 130px;
+    display: inline-block; 
+    color: white;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .tb {
+    font-size:20px; 
+    font-weight: bolder;
+    margin: 5px; 
+    border-radius: 10px;
+    color: white;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .ch {
+    font-size:12px; 
+    font-weight: bolder;
+    margin: 10px;
+    color: white;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+  }

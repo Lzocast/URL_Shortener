@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Error - 404 </title>
+<head>
+  <! --- Define that we want the background to take up the whole display ---> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/style.css">
+    </head>
+<body class="bg">
+<! --- Use jinja to reference the home function in the route for / --->
+<h1 class="err">This page could not be found. Check your code and try again <a href="{{ url_for('home') }}">Home Page</a></h1>
+</body>
+</html>
