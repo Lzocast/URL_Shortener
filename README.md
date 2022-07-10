@@ -46,12 +46,14 @@ App can display user input error messages flashed to jinja.
 
 < ========== Planned to implement ============== > 
 
-Copy button on the 'Your_URL' page to let user copy paste the created short link easily.
+Copy button on the 'Your_URL' page to let user copy paste the created short link easily. [Implemented as of July 2022]
 
-Network mode - access the app across local network safely and securely
+Network mode - access the app across local network safely and securely [Needs to be intergration with Gunicorn/Nginx front server]
+
+Implement blueprint model to allow for app growth i.e. develop __init__.py file and reorganise folder structure as necessary [Not a priority at present]
 
 
 
 
 
-App has been tested on macOS Monatery and Windows 11
+App has been tested on macOS Monatery and Windows 10/11
