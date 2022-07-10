@@ -21,8 +21,8 @@ Test if Flask installed correctly by typing 'flask' and seeing if pushing enter 
 Set your environment variables to tell flask what app you want it to run when activated (defaults to anything in the main directory called 'app.py' if you don't want
 to change anything) and if it should run in Production or Development Mode. I'd recommend the latter as it reacts to changes made in the app and updates live.
 
-N/B: if you choose to do this on Windows, the PowerShell commands for setting environment variables will need to be in the format env::$FLASK_APP='app-name.py'
-Otherwise the Export command on Linux of macOS.
+N/B: if you choose to do this on Windows, the PowerShell commands for setting environment variables will need to be in the format $env:FLASK_APP='app-name.py'
+Otherwise the Export command on Linux or macOS.
 
 
 
