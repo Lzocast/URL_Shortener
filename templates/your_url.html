@@ -12,4 +12,28 @@
 
 <h2 style="font-size:85px; color:white; margin:10px;">http://localhost:5000/{{ code }}</h2>
 
+<h2 style="font-size:85px; color:white; margin:10px;">http://localhost:5000/{{ code }}</h2>
+
+<input class="tb" type="url" value="http:/localhost:5000/{{ code }}" id="clipboard">
+<br>
+<!-- The button used to copy the text -->
+<button id="copy" onclick="copypasta()">Copy text</button>
+
+<script>
+    function copypasta() {
+      /* Get the text field */
+      var copyText = document.getElementById("clipboard");
+    
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText.value);
+      
+      /* Alert the copied text */
+      alert("Copied your link: " + copyText.value);
+    }
+    </script>
+
 {% endblock %}
